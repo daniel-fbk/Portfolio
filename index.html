@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daniel Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almendra+SC&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Cinzel+Decorative:wght@400;700;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend+Deca:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="./src/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <svg
+          class="burger-menu"
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </nav>
+    </header>
+    <main>
+      <section class="home-section">
+        <h1>Daniel Borsheim</h1>
+        <div class="underline-bar"></div>
+        <h2>Frontend utvikler</h2>
+        <div>
+          <video playsinline muted autoplay loop src="/hero-cover.mp4"></video>
+        </div>
+        <a href="" class="cv-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M12 5v14"></path>
+            <path d="M19 12l-7 7-7-7"></path>
+            <rect x="4" y="19" width="16" height="2" rx="1"></rect>
+          </svg>
+          Last ned CV</a
+        >
+      </section>
+      <section class="about-section">
+        <article class="introduction">
+          <div class="hello">
+            <h1>Hei! <span>Jeg er</span></h1>
+            <h2>Daniel Borsheim</h2>
+          </div>
+          <div class="about-me">
+            <p>
+              Jeg er en 29 år gammel utvikler som bruker HTML/CSS/JS, React,
+              Node.JS, TypeScript, SQL og Git.
+            </p>
+            <p>
+              Lidenskapen min er å utvikle både frontend og backend løsninger.
+              På fritiden jobber jeg med egne prosjekter, blant annet REST
+              API-er, databaser og interaktive nettsider.
+            </p>
+            <p>
+              Utenom koding liker jeg esports, tech talk, kort og brettspill
+            </p>
+          </div>
+        </article>
+        <div class="introduction-image">
+          <img src="./public/about-image.png" alt="introduction" />
+        </div>
+      </section>
+      <section class="projects-section">
+        <h1>Prosjekter</h1>
+        <h2>
+          Jeg jobbet med disse prosjektene både som utvikler og designer, hvor
+          jeg har skrevet kode og laget design i Figma.
+        </h2>
+        <article class="projects">
+          <div class="project-card">
+            <h3>Movie Database</h3>
+            <div class="card-container">
+              <div class="image-frame">
+                <img src="./public/project-movieDB.png" alt="" />
+              </div>
+              <div class="card-description">
+                <h3>01. <span>Description</span></h3>
+                <div class="card-icons">
+                  <div class="view-github">
+                    <p>Se kode</p>
+                  </div>
+                  <div class="view-live">
+                    <p>Se live</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <section class="contact">
+        <h1 class="footer-title">Kontakt</h1>
+        <div>
+          <h2 class="contact-info">
+            <span class="info-color">email: </span>daniel.borsheim@gmail.com
+          </h2>
+          <h2 class="contact-info">
+            <span class="info-color">number: </span>988 99 131
+          </h2>
+        </div>
+        <a href="" class="cv-button"></a>
+        <div>
+          <a href="">
+            <svg></svg>
+          </a>
+          <a href="">
+            <svg></svg>
+          </a>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
