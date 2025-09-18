@@ -39,7 +39,7 @@ a {
   justify-content: center;
   align-items: center;
   gap: 0.75rem;
-  border-radius: 30px;
+  border-radius: 50px;
 }
 
 .underline-bar {
@@ -65,6 +65,8 @@ a {
 header {
   position: sticky;
   top: 0;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .nav-overlay {
@@ -107,11 +109,6 @@ header {
 .nav-socials > a > svg {
 }
 
-header {
-  display: flex;
-  justify-content: flex-end;
-}
-
 .nav-desktop {
   display: none;
 }
@@ -142,7 +139,7 @@ video {
 }
 
 .about-section {
-  margin: 10rem 1rem 5rem;
+  margin: 10rem clamp(1rem, 5vw, 5rem) 5rem;
   padding: 6.25rem 0;
   border-top: 2px solid var(--primary-color);
   border-bottom: 2px solid var(--primary-color);
@@ -195,7 +192,7 @@ h2 {
 }
 
 .projects-section {
-  margin: 0 1rem 10rem;
+  margin: 0 clamp(1rem, 5vw, 5rem) 10rem;
 }
 
 .projects-section h1 {
@@ -313,4 +310,81 @@ footer {
   display: flex;
   gap: 2rem;
   padding: 4rem 0;
+}
+
+/*----------------------RESPONSIVE----------------------*/
+
+@media (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+
+  header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(27, 26, 30, 0.55);
+    border-bottom: 2px solid #3c364b;
+    height: 65px;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  .home-section {
+    height: 100vh;
+    justify-content: center;
+  }
+
+  .home-section h2 {
+    margin-bottom: 5rem;
+  }
+
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    margin: 0;
+  }
+
+  .nav-desktop {
+    display: flex;
+    gap: 20px;
+  }
+
+  .nav-desktop a {
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .about-section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .introduction-image {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 992px) {
+  html {
+    font-size: 18px;
+  }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1400px) {
+  html {
+    font-size: 20px;
+  }
 }
