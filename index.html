@@ -16,7 +16,7 @@
   <body>
     <header>
       <svg
-        class="burger-menu"
+        class="hamburger"
         width="30"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -25,11 +25,11 @@
         stroke-linejoin="round"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <line x1="3" y1="6" x2="21" y2="6"></line>
-        <line x1="3" y1="12" x2="21" y2="12"></line>
-        <line x1="3" y1="18" x2="21" y2="18"></line>
+        <line class="line-top" x1="3" y1="6" x2="21" y2="6"></line>
+        <line class="line-middle" x1="3" y1="12" x2="21" y2="12"></line>
+        <line class="line-bottom" x1="3" y1="18" x2="21" y2="18"></line>
       </svg>
-      <nav class="nav-overlay">
+      <nav class="nav-overlay preload">
         <a href="#">Hjem</a>
         <a href="about-section">Om meg</a>
         <a href="projects-section">Prosjekter</a>
@@ -74,7 +74,7 @@
         <div class="underline-bar" id="underline-bar-home"></div>
         <h2>Frontend utvikler</h2>
         <video playsinline muted autoplay loop src="/hero-cover.mp4"></video>
-        <a href="" class="cv-button">
+        <a href="/CV_DanielBorsheim.pdf" target="_blank" class="cv-button">
           <svg
             fill="currentColor"
             width="1.5em"
@@ -312,7 +312,7 @@
             <span class="info-color">email: </span>daniel.borsheim@gmail.com
           </h2>
           <h2><span class="info-color">nummer: </span>988 99 131</h2>
-          <a href="" class="cv-button">
+          <a href="/CV_DanielBorsheim.pdf" target="_blank" class="cv-button">
             <svg
               fill="currentColor"
               width="1.5em"
