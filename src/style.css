@@ -365,16 +365,29 @@ footer {
   }
 
   header {
-    position: relative;
+    position: sticky;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgba(27, 26, 30, 0.55);
     border-bottom: 2px solid #3c364b;
     height: 65px;
+    transition: transform 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+    transform: translateY(-100%);
   }
 
-  .hamburger {
+  header.top {
+    transform: translateY(0);
+  }
+
+  header.bottom {
+    transform: translateY(0);
+    background-color: rgba(0, 0, 0, 0.49);
+    border-bottom: 2px solid var(--secondary-color);
+  }
+
+  .hamburger,
+  .nav-overlay {
     display: none;
   }
 
