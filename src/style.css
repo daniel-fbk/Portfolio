@@ -58,6 +58,12 @@ a {
   border: 2px solid rgba(0, 0, 0, 0.5);
   border-radius: 50px;
   font-weight: 300 !important;
+  transition: 500ms;
+}
+
+.cv-button:hover {
+  background: #4a1374;
+  box-shadow: 0 0 20px #571374, 0 0 50px #135f74;
 }
 
 .underline-bar {
@@ -133,6 +139,27 @@ header {
 
 .nav-desktop {
   display: none;
+}
+
+.nav-desktop > a {
+  position: relative;
+}
+
+.nav-desktop > a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: var(--primary-color);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.5s ease;
+}
+
+.nav-desktop > a:hover::after {
+  transform: scaleX(1);
 }
 
 .hamburger {
@@ -383,7 +410,7 @@ footer {
   header.bottom {
     transform: translateY(0);
     background-color: rgba(0, 0, 0, 0.49);
-    border-bottom: 2px solid var(--secondary-color);
+    border-bottom: 2px solid var(--primary-color);
   }
 
   .hamburger,
