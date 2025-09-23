@@ -31,13 +31,6 @@ body {
   overflow-x: hidden;
 }
 
-/* main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} */
-
 h1,
 h2,
 h3,
@@ -61,9 +54,15 @@ a {
   transition: 500ms;
 }
 
-.cv-button:hover {
+.cv-button-1:hover {
   background: #4a1374;
   box-shadow: 0 0 20px #571374, 0 0 50px #135f74;
+}
+
+.cv-button-2:hover {
+  color: var(--color-footer);
+  background: var(--secondary-color);
+  box-shadow: 0 0 20px #65852d, 0 0 50px #6e7413;
 }
 
 .underline-bar {
@@ -189,7 +188,7 @@ video {
 }
 
 #about-section {
-  margin: 10rem auto 5rem;
+  margin: 5rem auto 5rem;
   padding: 6.25rem 0;
   border-top: 2px solid var(--primary-color);
   border-bottom: 2px solid var(--primary-color);
@@ -421,7 +420,7 @@ footer {
   .home-section {
     height: 100dvh;
     justify-content: center;
-    padding-bottom: 10dvh;
+    padding-bottom: 15dvh;
   }
 
   .home-section::after {
