@@ -94,7 +94,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  height: 100vh;
+  height: 100dvh;
   width: 100%;
   background: linear-gradient(
     to left,
@@ -306,9 +306,9 @@ h2 {
 footer {
   display: flex;
   align-items: center;
-  height: 100vh;
+  height: 100dvh;
   background-color: var(--color-footer);
-  padding: 0 clamp(0.5rem, 6vw, 5rem);
+  padding: 0 clamp(0.5rem, 4vw, 10rem);
 }
 
 .footer-image {
@@ -319,7 +319,7 @@ footer {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  max-width: var(--max-width);
+  max-width: 2000px;
 }
 
 .footer-title {
@@ -379,9 +379,9 @@ footer {
   }
 
   .home-section {
-    height: 100vh;
+    height: 100dvh;
     justify-content: center;
-    padding-bottom: 10vh;
+    padding-bottom: 10dvh;
   }
 
   .home-section::after {
