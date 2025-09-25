@@ -6,5 +6,9 @@ import { showHeader } from "./js/showHeader.js";
 //   mobileOverlay();
 // });
 
+window.onload = () => {
+  document.querySelector("body").classList.remove("preload");
+};
+
 mobileOverlay();
 showHeader();
