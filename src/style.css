@@ -16,7 +16,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: var(--font-inter);
   text-decoration: none;
   scroll-behavior: smooth;
   scroll-margin-top: 50px;
@@ -27,6 +26,7 @@
 }
 
 body {
+  font-family: var(--font-inter);
   background-color: var(--color-black);
   overflow-x: hidden;
 }
@@ -50,7 +50,7 @@ a {
   background-color: var(--primary-color);
   border: 2px solid rgba(0, 0, 0, 0.5);
   border-radius: 50px;
-  transition: 500ms;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 .underline-bar {
@@ -96,7 +96,7 @@ header {
   gap: 2rem;
   padding-left: 2rem;
   transform: translateX(100%);
-  transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+  transition: transform 0.6s cubic-bezier(0.33, 1, 0.68, 1);
 }
 
 .open {
@@ -148,7 +148,9 @@ header {
 }
 
 .hamburger {
-  margin-right: 10px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
   color: var(--color-white);
   z-index: 1000;
 }
@@ -176,11 +178,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100dvh;
-}
-
-.home-section h2 {
-  margin-bottom: 10rem;
+  height: 100vh;
 }
 
 .home-section::after {
@@ -200,6 +198,7 @@ header {
 .home-section h2 {
   font-size: clamp(1.75rem, 3vw, 3rem);
   font-weight: 300;
+  margin-bottom: 10rem;
 }
 
 video {
@@ -210,7 +209,6 @@ video {
   height: 100%;
   object-fit: cover;
   z-index: -1;
-  margin: 0;
 }
 
 #about-section {
@@ -219,7 +217,7 @@ video {
   border-top: 2px solid var(--primary-color);
   border-bottom: 2px solid var(--primary-color);
   max-width: var(--max-width);
-  width: calc(100% - clamp(2rem, 10vw, 10rem));
+  width: calc(100% - clamp(1rem, 5vw, 5rem));
 }
 
 .introduction {
@@ -235,7 +233,7 @@ video {
 }
 
 .introduction-title span,
-h2 {
+.introduction-title h2 {
   font-size: 1.5rem;
   font-weight: 500;
 }
@@ -291,10 +289,7 @@ h2 {
 }
 
 .project-card {
-  width: 100%;
   max-width: 615px;
-  display: flex;
-  flex-direction: column;
   margin: 0 auto;
 }
 
@@ -308,7 +303,6 @@ h2 {
 .project-card-content {
   border-radius: 5px;
   border: 1px solid #4b4b4b;
-  overflow: hidden;
 }
 
 .image-frame {
@@ -320,7 +314,6 @@ h2 {
 }
 
 .image-frame > img {
-  height: 85%;
   width: 90%;
   border-radius: 5px;
   box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.5);
@@ -328,9 +321,6 @@ h2 {
 
 .card-bottom {
   background-color: var(--color-projectCardBlack);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   padding: 0.625rem 1rem;
 }
 
@@ -441,34 +431,11 @@ footer {
   }
 
   .home-section {
-    height: 100dvh;
-    justify-content: center;
-    padding-bottom: 15dvh;
-  }
-
-  .home-section::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 10px;
-    background: linear-gradient(to bottom, transparent, var(--color-black));
+    padding-bottom: 15vh;
   }
 
   .home-section h2 {
     margin-bottom: 5rem;
-  }
-
-  video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-    margin: 0;
   }
 
   .nav-desktop {
@@ -483,13 +450,11 @@ footer {
 
   .cv-button-1:hover {
     background: #4a1374;
-    box-shadow: 0 0 20px #571374, 0 0 50px #135f74;
   }
 
   .cv-button-2:hover {
     color: var(--color-footer);
     background: var(--secondary-color);
-    box-shadow: 0 0 20px #65852d, 0 0 50px #6e7413;
   }
 
   .footer-image {
