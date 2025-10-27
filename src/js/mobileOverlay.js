@@ -17,8 +17,7 @@ export const mobileOverlay = () => {
   mobileLinks.forEach((link) => {
     link.addEventListener("click", () => {
       navOverlay.classList.remove("open");
-      body.style.overflow =
-        body.style.overflow === "hidden" ? "auto" : "hidden";
+      body.style.overflow = body.style.overflow === "hidden" ? "auto" : "hidden";
       hamburger.classList.toggle("open");
     });
   });

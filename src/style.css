@@ -7,8 +7,7 @@
   --color-projectCardGray: #373737;
   --color-projectCardBlack: #0f0e0e;
   --color-footer: #232323;
-  --font-inter: inter, roboto, "josefin sans", "barlow semi condensed",
-    sans-serif;
+  --font-inter: inter, roboto, "josefin sans", "barlow semi condensed", sans-serif;
   --max-width: 1310px;
 }
 
@@ -87,11 +86,7 @@ header {
   align-items: flex-start;
   height: 100dvh;
   width: 100%;
-  background: linear-gradient(
-    to left,
-    rgba(30, 30, 30, 0.95),
-    rgba(15, 15, 15, 0.9)
-  );
+  background: linear-gradient(to left, rgba(30, 30, 30, 0.95), rgba(15, 15, 15, 0.9));
   backdrop-filter: blur(10px);
   gap: 2rem;
   padding-left: 2rem;
